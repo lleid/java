@@ -23,7 +23,7 @@ public class InstanceTest {
             InstantiationException, NoSuchMethodException, InvocationTargetException, IOException {
         User user = new User();
         user.setName("leo");
-//        generateSerializableUser(user);     //生成序列化数据
+        generateSerializableUser(user);     //生成序列化数据
 
         System.out.println("第1种 new ");
         User user1 = new User();
