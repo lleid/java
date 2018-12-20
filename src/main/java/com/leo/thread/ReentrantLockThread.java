@@ -4,7 +4,7 @@ import java.util.Date;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * 重入锁
+ * 重入锁   
  */
 public class ReentrantLockThread extends Thread {
 
@@ -18,9 +18,14 @@ public class ReentrantLockThread extends Thread {
 
     @Override
     public void run() {
-        for (int j = 0; j < 10000; j++) {
+        for (int j = 0; j < 10; j++) {
             lock.lock();
             try {
+                try {
+                    Thread.sleep(1 * 1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
                 System.out.println(this.getName() + " :-->" + j);
                 i++;
             } finally {
