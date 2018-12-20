@@ -17,7 +17,7 @@ public class ObjectOutputStreamWrapper {
         if (file.length() < 1) {
             return new ObjectOutputStream(fout);
         } else {
-            return new ObjectOutputStreamNoHeader(out);
+            return new ObjectOutputStreamNoHeader(fout);
         }
     }
 }

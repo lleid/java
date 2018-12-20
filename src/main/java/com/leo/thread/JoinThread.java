@@ -1,5 +1,8 @@
 package com.leo.thread;
 
+/**
+ * thread.join()方法的使用
+ */
 public class JoinThread extends Thread {
 
     private String name;
