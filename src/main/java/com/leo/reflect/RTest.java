@@ -1,7 +1,7 @@
 package com.leo.reflect;
 
-import com.leo.beans.Animal;
-import com.leo.beans.IAnnotation;
+import com.leo.reflect.beans.Animal;
+import com.leo.reflect.beans.IAnnotation;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.*;
@@ -22,7 +22,7 @@ public class RTest {
      * @throws Exception
      */
     public static void main(String[] args) throws Exception {
-        String animalCname = "com.leo.beans.Animal";
+        String animalCname = "com.leo.reflect.beans.Animal";
         System.out.println(Class.forName(animalCname).getClassLoader());
 
 //        classInstance(animalCname);

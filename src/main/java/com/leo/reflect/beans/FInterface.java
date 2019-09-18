@@ -1,4 +1,4 @@
-package com.leo.beans;
+package com.leo.reflect.beans;
 
 public interface FInterface {
 }
