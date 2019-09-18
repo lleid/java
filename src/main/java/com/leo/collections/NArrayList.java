@@ -26,7 +26,13 @@ public class NArrayList {
     }
 
 
-    public void add(Object obj){
+    public void add(Object obj) {
+        ensureCapacity();
+        elementData[++size] = obj;
+    }
+
+    public void ensureCapacity() {
 
     }
+
 }
