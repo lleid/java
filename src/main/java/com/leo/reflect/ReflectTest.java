@@ -13,7 +13,7 @@ import java.util.HashMap;
  * 在运行时，通过反射可以获取类的所有信息
  */
 @SuppressWarnings(value = {"all"})
-public class RTest {
+public class ReflectTest {
 
     /**
      * getDeclared*** 表示声明所有的，但是不包括父类

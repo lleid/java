@@ -13,7 +13,7 @@ import java.util.List;
  * 也就是说，泛型信息不会进入到运行时阶段。
  * 静态方法无法访问类上定义的泛型，静态泛型方法static <T> 这个T跟泛型类的T没有关系
  */
-public class GTest {
+public class GenericTest {
     public static void main(String[] args) {
         //不定义确切类型,就是object
         NGeneric n1 = new NGeneric();
