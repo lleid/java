@@ -1,4 +1,4 @@
-package com.leo;
+package com.leo.gc;
 
 /**
  * testGC() 方法执行后，objA和objB会不会被GC呢

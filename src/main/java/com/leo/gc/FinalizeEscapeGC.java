@@ -1,4 +1,4 @@
-package com.leo;
+package com.leo.gc;
 
 public class FinalizeEscapeGC {
     public static FinalizeEscapeGC SAVE_HOOK = null;

@@ -1,4 +1,4 @@
-package com.leo.instance;
+package com.leo.instance.beans;
 
 import java.io.Serializable;
 
@@ -17,7 +17,7 @@ public class User implements Cloneable, Serializable {
     }
 
     @Override
-    protected Object clone() {
+    public Object clone() {
         try {
             return super.clone();
         } catch (CloneNotSupportedException e) {

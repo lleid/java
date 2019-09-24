@@ -1,5 +1,6 @@
 package com.leo.instance;
 
+import com.leo.instance.beans.User;
 import org.apache.commons.lang3.SerializationUtils;
 
 import java.io.FileInputStream;
@@ -31,7 +32,7 @@ public class InstanceTest {
         System.out.println(user1.getName());
         System.out.println("-------------------");
         System.out.println("第2种 newInstance ");
-        Class clazz = Class.forName("com.leo.instance.User");
+        Class clazz = Class.forName("com.leo.instance.beans.User");
         User user2 = (User) clazz.newInstance();
         user2.setName("leo2");
         System.out.println(user2.getName());
