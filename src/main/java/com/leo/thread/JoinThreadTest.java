@@ -3,12 +3,12 @@ package com.leo.thread;
 /**
  * thread.join()方法的使用
  */
-public class JoinThread extends Thread {
+public class JoinThreadTest extends Thread {
 
     private String name;
     private int times;
 
-    public JoinThread(String name, int times) {
+    public JoinThreadTest(String name, int times) {
         this.name = name;
         this.times = times;
     }
@@ -21,8 +21,8 @@ public class JoinThread extends Thread {
     }
 
     public static void main(String[] args) {
-        JoinThread j1 = new JoinThread("j1", 10);
-        JoinThread j2 = new JoinThread("j2", 10);
+        JoinThreadTest j1 = new JoinThreadTest("j1", 10);
+        JoinThreadTest j2 = new JoinThreadTest("j2", 10);
 
         Thread t1 = new Thread(j1);
         Thread t2 = new Thread(j2);

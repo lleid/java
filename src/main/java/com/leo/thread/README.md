@@ -1,6 +1,22 @@
 ### 线程
 
-#### ReentrantLock    重入锁
+> 创建线程的三种方式
+1. extends Thread
+2. implements Runable
+3. implements Callable
+
+> start()和run()的区别
+
+start()方法属于Thread类，通过sync来同步，里面调用native方法来实现来启动一个线程。
+run()方法属于Runnable，数以一个普通方法
+
+> yield()和sleep()的区别
+
+1. yield()，sleep()都能暂停当前线程，sleep可以指定休眠时间，yield则依赖cpu的时间片划分
+2. 如果持有锁，都不会释放锁资源
+3. yield不能被中断，sleep则可以接受中断
+
+> ReentrantLock  重入锁
 
 1. 可重入:可以反复得到相同的一把锁，它有一个与锁相关的获取计数器，如果拥有锁的某个线程再次得到锁，那么获取计数器就加1，然后锁需要被释放两次才能获得真正释放(重入锁)。
 2. 可中断:与synchronized不同的是，ReentrantLock对中断是有响应的.synchronized一旦尝试获取锁就会一直等待直到获取到锁。

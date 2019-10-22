@@ -13,7 +13,7 @@ import java.util.concurrent.Executors;
  * 阻塞：单线程环境下，如果IO操作没有完成的话，当前线程不能做其他事情
  * 非阻塞：单线程环境下，如果IO操作没有完成的话，当前线程可以进行其他操作
  */
-public class BIOServer {
+public class SocketIOServer {
     public static void server1() {
         ServerSocket server = null;
         InputStream in = null;
