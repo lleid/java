@@ -22,9 +22,17 @@
 
 继承AbstractSequentialList的双向链表
 
-#### Vector
+> Vector
 
-矢量队列，线程安全。通过数据来保存数据，默认容量是10。
+矢量队列，线程安全(synchronized方法来实现)。通过数据来保存数据，默认容量是10。
+
+> Collections.SynchronizedList
+
+线程安全（synchronized同步对象锁）
+
+> CopyOnWriteArrayList
+
+线程安全（add加ReentrantLock实现，读不加锁），适用于读多写少的情况。复制再写入，就是在添加元素的时候，先把原 List 列表复制一份，再添加新的元素。
 
 #### Stack
 

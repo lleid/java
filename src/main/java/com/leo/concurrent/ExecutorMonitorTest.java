@@ -1,4 +1,4 @@
-package com.leo.thread;
+package com.leo.concurrent;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.LinkedBlockingDeque;

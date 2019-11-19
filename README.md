@@ -24,7 +24,11 @@
     * 都继承AbstractStringBuilder
     * StringBuffer通过Synchronized来实现线程安全，StringBuilder非线程安全，并发下会抛ArrayIndexOutOfBoundException。
     （append(str)中通过ensureCapacityInternal()方法用来判断当前对象的容量能不能盛下新的字符串，不够的话新建一个长度为2*len+2的新数组，通过System.arrayCopy将原数组内容复制到新数组中，最后将指针指向新的数组）
-
+9. hashCode和identifyHashCode的区别
+   * obj.hashCode(),System.identifyHashCode(obj)
+   * identifyHashCode()返回根据对象物理内存地址生成的hash值 
+   * 如果对象重写了hashCode()方法,则hashCode()返回重写后的hash值
+   * 如果对象没有重写hashCode()方法,则hash值相同
 
 
 
